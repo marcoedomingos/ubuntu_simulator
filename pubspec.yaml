@@ -1,0 +1,34 @@
+name: ubuntu_simulate
+description: A fully interactive Ubuntu 22.04 LTS simulation built with Flutter.
+version: 1.0.0+1
+
+environment:
+  sdk: '^3.12.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.8
+  model_viewer_plus: ^1.10.0
+  google_fonts: ^8.0.0
+  web: ^1.1.1
+  intl: ^0.20.3
+  smart_watch:
+    git:
+      url: https://github.com/marcoedomingos/pixel_watch_flutter.git
+      ref: web_deploy
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+
+dependency_overrides:
+  http: ^1.1.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/src/
+    - assets/code/monitor.dart
+    - assets/code/monitor_frame_painter.dart

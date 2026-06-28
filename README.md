@@ -1,18 +1,12 @@
-# components
+# Ubuntu Simulation Portfolio
 
-A new Flutter project.
+A fully interactive Ubuntu 22.04 LTS simulation built with Flutter.
 
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Learn Flutter](https://docs.flutter.dev/get-started/learn-flutter)
-- [Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Flutter learning resources](https://docs.flutter.dev/reference/learning-resources)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
-# ubuntu_simulator
+## Features
+- **Simulated VFS**: Virtual File System with persistent-like behavior.
+- **Interactive Terminal**: Custom shell implementation (ls, cd, neofetch, nano, etc.).
+- **Desktop Environment**: Functional Dock, TopBar, and Context Menus.
+- **Window Manager**: Multi-window support with minimize/maximize logic.
+- **Integrated Pixel Watch**: Living simulation of a smartwatch.
+- **VS Code Clone**: Built-in editor to explore the project's source code.
+- **Hardware Simulation**: Interactive Monitor OSD and Power buttons.
