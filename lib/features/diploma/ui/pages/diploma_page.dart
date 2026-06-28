@@ -8,7 +8,7 @@ class Diploma extends StatelessWidget {
   Widget build(BuildContext context) {
     return const SizedBox.expand(
       child: ModelViewer(
-        src: 'assets/assets/src/base_basic_shaded.glb',
+        src: 'assets/src/base_basic_shaded.glb',
         alt: 'Digital Diploma 3D Model',
         ar: false,
         autoRotate: true,
