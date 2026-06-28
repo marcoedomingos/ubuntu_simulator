@@ -9,11 +9,11 @@ class Diploma extends StatelessWidget {
     return const SizedBox.expand(
       child: ModelViewer(
         src: 'assets/src/base_basic_shaded.glb',
-        alt: '3D Model',
+        alt: 'Digital Diploma 3D Model',
         ar: false,
         autoRotate: true,
         cameraControls: true,
-        backgroundColor: Colors.transparent,
+        backgroundColor: Color(0xFF1E1E1E),
       ),
     );
   }

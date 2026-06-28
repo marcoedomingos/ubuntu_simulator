@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 
 import 'package:ubuntu_simulate/features/browser/ui/pages/firefox_browser.dart';
 import 'package:ubuntu_simulate/features/code_editor/ui/pages/vscode_monitor_editor.dart';
+import 'package:ubuntu_simulate/features/diploma/ui/pages/diploma_page.dart';
 import 'package:ubuntu_simulate/features/files/ui/pages/files_view.dart';
 import 'package:ubuntu_simulate/features/pixel_watch/ui/pages/pixel_watch_view.dart';
 import 'package:ubuntu_simulate/features/settings/ui/pages/settings_view.dart';
@@ -178,6 +179,13 @@ class UbuntuDesktopState extends State<UbuntuDesktop> implements OsController {
       onLaunch: () => _openOrFocus('settings'),
     ),
     DockApp(
+      id: 'diploma',
+      label: 'Diploma',
+      icon: Icons.school,
+      color: Colors.purple,
+      onLaunch: () => _openOrFocus('diploma'),
+    ),
+    DockApp(
       id: 'pixel_watch',
       label: 'Pixel Watch',
       icon: Icons.watch_rounded,
@@ -253,6 +261,7 @@ class UbuntuDesktopState extends State<UbuntuDesktop> implements OsController {
     'files' => const FilesView(),
     'firefox' => const FirefoxBrowser(),
     'settings' => const SettingsView(),
+    'diploma' => const Diploma(),
     'pixel_watch' => const PixelWatchView(),
     _ => const SizedBox.shrink(),
   };
